@@ -1,0 +1,47 @@
+<!-- Interpolation -->
+<!-- <h1>My name is {{name}}!</h1>
+<p>I'm {{age}} years old!</p> -->
+
+<!-- One-way binding (Property binding) -->
+<!-- <input type="text" [value]="my_name" />
+<input type="text" [value]="my_surname" /> -->
+
+<!-- One-way binding (Event binding) -->
+<!-- <p>Quantity: {{ count }}</p>
+<button (click)="increase()">Click me!</button> -->
+
+<!-- Two-way binding -->
+<!-- <p>Hello, {{ another_name }}</p>
+<input type="text" [(ngModel)]="another_name" />
+<input type="text" [(ngModel)]="another_name" />
+
+
+<input [type]="typeInputEl" /> -->
+
+
+<!-- With attribute (Property binding in component.ts)-->
+<!-- <img [src]="imageUrl" alt="Cutest puppies"> -->
+
+<!-- With method (Property and event binding in component.ts)-->
+<!-- <button [type]="btnClick" (click)="onSubmit()">Click me!</button> -->
+
+<!-- With literals (Property binding in component.ts) -->
+<!-- <input type="text" [placeholder]="'anyText'" > -->
+
+
+ <!-- <p>
+  <label for="example1"></label>
+  <input [(ngModel)]="my_name" id="example1">
+  <input [(ngModel)]="my_name" id="example1">
+</p>
+
+<p class="example2">
+<input [ngModel]="my_surname" (ngModelChange)="my_surname = $event">
+<input [ngModel]="my_surname" (ngModelChange)="my_surname = $event">
+</p> -->
+
+
+<div>
+  <input (input)="OnFirstValueInputed($event)" (keyup)="OnKeyUp($event)">
+  <input [value]="secondInputValue">
+</div>
